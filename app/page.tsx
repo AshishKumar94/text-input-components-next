@@ -16,7 +16,7 @@ const InputField = ({
   value?: string;
 }): ReactElement => {
   return (
-    <div className="relative flex flex-col gap-[8px]">
+    <div className="flex flex-col gap-[8px]">
       <label htmlFor="email">Email</label>
       <div className="relative">
         <input
@@ -79,8 +79,8 @@ const inputConfig = [
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[48px] row-start-2 items-center sm:items-start">
+    <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] mt-[32px]">
+      <main className="flex flex-col gap-[48px] row-start-0 items-center sm:items-start">
         {inputConfig.map(({ key, ...restConfig }) => (
           <InputField key={key} {...restConfig} />
         ))}

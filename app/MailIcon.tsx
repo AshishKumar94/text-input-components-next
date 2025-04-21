@@ -1,5 +1,4 @@
-
-export const MailIcon = (props: { className?: string}) => (
+export const MailIcon = (props: { className?: string }) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,6 @@
 import { type ReactElement } from "react";
 
-export const QuestionIcon = (props: {
-  className?: string;
-}): ReactElement => (
+export const QuestionIcon = (props: { className?: string }): ReactElement => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
